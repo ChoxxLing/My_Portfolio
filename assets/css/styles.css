@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    background-color: #000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Set direction to horizontal */
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #808080; 
+	border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+	background-color: #000;
+}
+
+.logo-text {
+    font-weight: normal;
+    font-size: 22px; /* Adjust the font size as needed */
+    font-family: Verdana, sans-serif; /* Change the font family as needed */
+    color: #c86ce4; /* Adjust the color as needed */
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-top: 1px solid #752483;
+    border-bottom: 3px solid #752483;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out items horizontally */
+    border-radius: 25px; /* Add border radius for curved edges */
+    overflow: hidden; /* Hide overflowing content */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    min-height: 45px; /* Set minimum height */
+}
+
+nav a {
+	float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+	font-family: Garamond, serif;;
+    transition: all transform 0.3s ease; /* Add transition for the transform property */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center vertically using flexbox */
+}
+
+nav li {
+    margin-right: 70px;
+}
+
+nav a:hover {
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 2px solid rgb(236, 19, 73); /* Set the underline color to blue */
+    padding-bottom: 8px; /* Adjust the distance of the underline from the text */
+    transform: translateY(-3px); /* Add floating animation */
+}
+
+nav a.active,
+nav a.active:hover {
+    border-bottom: 2px solid rgb(236, 19, 73); /* Set the underline color to blue */
+    padding-bottom: 8px; /* Adjust the distance of the underline from the text */
+    color: rgb(255, 0, 170); /* Adjust the color of the link */
+    transform: translateY(-3px); /* Add floating animation */
+}
+
+
+.nav-button {
+    position: absolute;
+    left: 90%; /* Adjust the left position as needed */
+    top: 50%; /* Adjust the top position to center vertically */
+    transform: translateY(-50%); /* Center the button vertically */
+    background-color: rgba(97,22,94,0.6);
+	font-weight: bold;
+	width: 125px;
+	font-size: 15px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nav-button:hover::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(185, 29, 138, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: ripple 1s infinite;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+
+.home-section {
+	position: relative; /* Set position to relative to allow absolute positioning of content */
+	min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+	min-width: 100vw; /* Set minimum height to 100% of the viewport height */
+    background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+	
+}
+
+.flex-container-details {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 35% down from the top */
+    left: 30%; /* Position the container 45% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    text-align: left; /* Align text to the left */
+}
+
+.content {
+    width: 70%; /* Adjust the width of the content */
+}
+
+.content h2 {
+    font-size: 45px; /* Adjust the font size */
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    margin-bottom: 10px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the drop shadow */
+}
+
+.content h1 {
+    font-size: 70px; /* Adjust the font size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+    text-shadow: 2px 2px 4px rgba(197, 67, 67, 0.4); /* Adjust the drop shadow */
+}
+
+.content p {
+    font-size: 25px;
+    font-family: Garamond, serif;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Set position to relative */
+}
+
+.content p::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Set position to absolute */
+    top: 0;
+    left: -15px; /* Adjust the position of the vertical line */
+    width: 5px; /* Adjust the width of the vertical line */
+    height: 100%; /* Set the height to 100% of the paragraph */
+    background-color: #fafafa; /* Adjust the color of the vertical line */
+}
+
+.flex-picture {
+    position: absolute; /* Set position to absolute */
+    left: 70%; /* Position the container 65% from the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.my-picture {
+    width: auto; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100px; /* Add border radius for rounded corners */
+}
+
+
+.flex-details_and_picture{
+	position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 50% down from the top */
+    left: 50%; /* Position the container 50% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    width: 70%; /* Adjust the width of the container */
+}
+
+
+
+
+
+
+
+.about-section {
+    position: relative; /* Set position to relative to allow absolute positioning of content */
+	min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+	min-width: 100vw; /* Set minimum height to 100% of the viewport height */
+	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+
+}
+
+.flex-about-me {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 35% down from the top */
+    left: 30%; /* Position the container 45% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    text-align: left; /* Align text to the left */
+}
+
+.about-me-content {
+    width: 70%; /* Adjust the width of the content */
+}
+
+.about-me-content h1 {
+    font-size: 60px; /* Adjust the font size */
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+}
+
+.about-me-content p {
+    font-size: 25px;
+    font-family: Garamond, serif;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Set position to relative */
+}
+
+.flex-about-me-picture {
+    position: absolute; /* Set position to absolute */
+    left: 50%; /* Position the container 65% from the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.prog-picture {
+    width: 647; /* Set the width of the image */
+    height: 496; /* Maintain aspect ratio */
+    border-radius: 100px; /* Add border radius for rounded corners */
+}
+
+
+.flex-aboutme_and_picture{
+	position: absolute; /* Set position to absolute */
+    top: 45%; /* Position the container 50% down from the top */
+    left: 50%; /* Position the container 50% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    width: 70%; /* Adjust the width of the container */
+}
+
+
+
+
+
+
+
+
+.skills-section {
+	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+	min-height: 1024px; /* Set minimum height */
+
+}
+
+.skills-section h2 {
+    font-size: 45px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+
+}
+
+.skills-section p {
+    font-size: 25px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+}
+
+
+
+
+.work-section {
+	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+	min-height: 1024px; /* Set minimum height */
+
+}
+
+.work-section h2 {
+    font-size: 45px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+
+}
+
+.work-section p {
+    font-size: 25px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+}
+
+
+
+
+.contact-section {
+    min-height: 1024px; /* Set minimum height */
+    background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+
+}
+
+
+.contact-section h2 {
+    font-size: 45px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+
+}
+
+.contact-section p {
+    font-size: 25px; /* Adjust the font size */
+	color: #ffffff; /* Adjust the font color */
+}
