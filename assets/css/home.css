@@ -1,0 +1,84 @@
+.home-section {
+	position: relative; /* Set position to relative to allow absolute positioning of content */
+	min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+	min-width: 100vw; /* Set minimum height to 100% of the viewport height */
+    background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+	
+}
+
+.flex-container-details {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 35% down from the top */
+    left: 30%; /* Position the container 45% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    text-align: left; /* Align text to the left */
+}
+
+.content {
+    width: 70%; /* Adjust the width of the content */
+}
+
+.content h2 {
+    font-size: 45px; /* Adjust the font size */
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    margin-bottom: 10px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the drop shadow */
+}
+
+.content h1 {
+    font-size: 70px; /* Adjust the font size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+    text-shadow: 2px 2px 4px rgba(197, 67, 67, 0.4); /* Adjust the drop shadow */
+}
+
+.content p {
+    font-size: 25px;
+    font-family: Garamond, serif;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Set position to relative */
+}
+
+.content p::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Set position to absolute */
+    top: 0;
+    left: -15px; /* Adjust the position of the vertical line */
+    width: 5px; /* Adjust the width of the vertical line */
+    height: 100%; /* Set the height to 100% of the paragraph */
+    background-color: #fafafa; /* Adjust the color of the vertical line */
+}
+
+.flex-picture {
+    position: absolute; /* Set position to absolute */
+    left: 70%; /* Position the container 65% from the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.my-picture {
+    width: auto; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100px; /* Add border radius for rounded corners */
+}
+
+
+.flex-details_and_picture{
+	position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 50% down from the top */
+    left: 50%; /* Position the container 50% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    width: 70%; /* Adjust the width of the container */
+}

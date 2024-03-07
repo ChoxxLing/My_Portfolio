@@ -4,6 +4,10 @@
 
 	<head>
 		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/home.css">
+		<link rel="stylesheet" href="assets/css/aboutme.css">
+		<link rel="stylesheet" href="assets/css/navigationbar.css">
+		
 		<title>Portfolio Daven Jude Rosales</title>
 	</head>
 
@@ -14,7 +18,7 @@
 			
 			<ul>
 				<li>
-					<span class="logo-text">Daven Jude Rosales</span>
+					<span class="nav-logo-text">Daven Jude Rosales</span>
 				</li>
 				<li><a href="#home" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">Home</a></li>
 				<li><a href="#about" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">About me</a></li>
@@ -24,7 +28,13 @@
 				
 			</ul>
 
-			<button class="nav-button">RESUME</button>
+			<button class="nav-button" onclick="openResume()">RESUME</button>
+				<script>
+					function openResume() {
+						window.open("https://drive.google.com/file/d/1aA0dA3kH_Ws-As8y7sSNHPdh7tQzIa1C/view?usp=drivesdk", "_blank");
+					}
+				</script>
+
 		</nav>
 <main>
 		<section class="home-section" id="home">
@@ -54,11 +64,15 @@
 
 		<section class="about-section" id="about">
 			<!-- About content goes here -->
-			
+			<br>
+			<br>
 			<div class="flex-aboutme_and_picture">
 				<div class="flex-about-me">
 					<div class="about-me-content">
 						<h1>About me</h1>
+							<div class="flex-container">
+								<div class="arrow-with-tail" style="--arrow-color: #C516AE; --arrow-rotation: 180deg;"></div>
+							</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut varius dui. Nulla facilisi. Praesent porta semper diam sed lacinia. Proin lacus mi, auctor id massa nec, aliquam mollis tellus. Nulla pharetra et eros at bibendum. 
 							</p>
 						<p>Fusce mollis lorem vitae tellus sollicitudin, lacinia faucibus enim commodo. Curabitur congue sem nec ligula auctor, et convallis purus sagittis.
@@ -69,6 +83,26 @@
 				<div class="flex-about-me-picture">
 					<img src="assets/pictures/programingpicture.png" alt="prog-picture" class="prog-picture">
 				</div>
+			</div>
+
+			<div class="flex-skill-container">
+				<h1>My Skills</h1>
+					<div class="flex-skill-list-container">
+						<ul class="skill-list">
+							<li class="about__list">HTML</li>
+							<br>
+							<li class="about__list">CSS</li>
+							<br>
+							<li class="about__list">JavaScript</li>
+						</ul>
+						<ul class="skill-list2">
+							<li class="about__list">Java</li>
+							<br>
+							<li class="about__list">C</li>
+							<br>
+							<li class="about__list"></li>
+						</ul>
+					</div>
 			</div>
 
 		</section>

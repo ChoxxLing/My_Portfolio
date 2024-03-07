@@ -1,0 +1,160 @@
+.about-section {
+    position: relative; /* Set position to relative to allow absolute positioning of content */
+	min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+	min-width: 100vw; /* Set minimum height to 100% of the viewport height */
+	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
+
+}
+
+.flex-about-me {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the container 35% down from the top */
+    left: 30%; /* Position the container 45% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    text-align: left; /* Align text to the left */
+}
+
+.about-me-content {
+    width: 70%; /* Adjust the width of the content */
+}
+
+.about-me-content h1 {
+    font-size: 60px; /* Adjust the font size */
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px; /* Add spacing between elements */
+    color: #ffffff; /* Adjust the font color */
+}
+
+.about-me-content p {
+    font-size: 25px;
+    font-family: Garamond, serif;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Set position to relative */
+}
+
+.flex-about-me-picture {
+    position: absolute; /* Set position to absolute */
+    left: 50%; /* Position the container 65% from the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.prog-picture {
+    width: 647; /* Set the width of the image */
+    height: 496; /* Maintain aspect ratio */
+    border-radius: 100px; /* Add border radius for rounded corners */
+}
+
+
+.flex-aboutme_and_picture{
+	position: absolute; /* Set position to absolute */
+    top: 40%; /* Position the container 50% down from the top */
+    left: 50%; /* Position the container 50% from the left */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    width: 70%; /* Adjust the width of the container */
+}
+
+
+/* Arrow */
+.flex-container {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .arrow-with-tail {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: var(--arrow-color, #C516AE);
+  }
+  
+  .arrow-with-tail::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 100px);
+    transform: translate(-100%, -50%) rotate(var(--arrow-rotation, 0deg));
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid var(--arrow-color, #C516AE);
+  }
+  
+
+
+
+
+
+
+
+/* Skill Here */
+
+
+
+
+.flex-skill-container{
+    position: absolute;
+    top: 70%;
+    left: 12%;
+
+}
+
+
+.flex-skill-container h1 {
+    display: flex;
+    color: #ffffff;
+    font-size: 45px;
+    font-family: Georgia, serif;
+
+
+
+}
+
+
+.flex-skill-list-container{
+    position: absolute;
+    top: 80%;
+    left: -20%;
+    display: flex;
+    font-size: 25px;
+
+}
+
+
+.skill-list,
+.skill-list2 {
+    position: relative;
+    color: #ffffff;
+    flex: 1; /* Each list takes up equal space */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+
+}
+
+.skill-list{
+    margin-left: 40px;
+    margin-right: 150px;
+
+}
+
+.skill-list2{
+    margin-right: 0%;
+    margin-left: 100%;
+
+}
+
