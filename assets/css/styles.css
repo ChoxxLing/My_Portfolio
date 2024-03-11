@@ -4,8 +4,10 @@ body {
     background-color: #000;
     overflow-y: scroll;
     overflow-x: hidden;
-    display: flex; /* Use flexbox to align items */
-    flex-direction: column; /* Set direction to horizontal */
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 ::-webkit-scrollbar {

@@ -7,14 +7,14 @@ nav {
     z-index: 1000;
     border-top: 1px solid #752483;
     border-bottom: 3px solid #752483;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space out items horizontally */
-    border-radius: 25px; /* Add border radius for curved edges */
-    overflow: hidden; /* Hide overflowing content */
-    backdrop-filter: blur(10px); /* Apply blur effect to the background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    min-height: 45px; /* Set minimum height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-height: 45px;
 }
 
 nav a {
@@ -23,7 +23,7 @@ nav a {
     color: white;
     font-size: 20px;
 	font-family: Garamond, serif;;
-    transition: all transform 0.3s ease; /* Add transition for the transform property */
+    transition: all transform 0.3s ease;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Center vertically using flexbox */
+    align-items: center;
 }
 
 nav li {
@@ -39,26 +39,26 @@ nav li {
 }
 
 nav a:hover {
-    text-decoration: none; /* Remove default underline */
-    border-bottom: 2px solid rgb(236, 19, 73); /* Set the underline color to blue */
-    padding-bottom: 8px; /* Adjust the distance of the underline from the text */
-    transform: translateY(-3px); /* Add floating animation */
+    text-decoration: none;
+    border-bottom: 2px solid rgb(236, 19, 73);
+    padding-bottom: 8px;
+    transform: translateY(-3px);
 }
 
 nav a.active,
 nav a.active:hover {
-    border-bottom: 2px solid rgb(236, 19, 73); /* Set the underline color to blue */
-    padding-bottom: 8px; /* Adjust the distance of the underline from the text */
-    color: rgb(255, 0, 170); /* Adjust the color of the link */
-    transform: translateY(-3px); /* Add floating animation */
+    border-bottom: 2px solid rgb(236, 19, 73);
+    padding-bottom: 8px;
+    color: rgb(255, 0, 170);
+    transform: translateY(-3px);
 }
 
 
 .nav-button {
     position: absolute;
-    left: 90%; /* Adjust the left position as needed */
-    top: 50%; /* Adjust the top position to center vertically */
-    transform: translateY(-50%); /* Center the button vertically */
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: rgba(97,22,94,0.6);
 	font-weight: bold;
 	width: 125px;
@@ -100,9 +100,9 @@ nav a.active:hover {
 
 .nav-logo-text {
     font-weight: normal;
-    font-size: 22px; /* Adjust the font size as needed */
-    font-family: Verdana, sans-serif; /* Change the font family as needed */
-    color: #c86ce4; /* Adjust the color as needed */
-    margin-left: 20px; /* Adjust the left margin as needed */
+    font-size: 22px;
+    font-family: Verdana, sans-serif;
+    color: #c86ce4;
+    margin-left: 20px;
 }
 

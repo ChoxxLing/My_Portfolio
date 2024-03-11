@@ -1,31 +1,31 @@
 .about-section {
-    position: relative; /* Set position to relative to allow absolute positioning of content */
-	min-height: 100vh; /* Set minimum height to 100% of the viewport height */
-	min-width: 100vw; /* Set minimum height to 100% of the viewport height */
+    position: relative;
+	min-height: 100vh;
+	min-width: 100vw; 
 	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5)); /* Define a linear gradient with three colors */
 
 }
 
 .flex-about-me {
-    position: absolute; /* Set position to absolute */
-    top: 50%; /* Position the container 35% down from the top */
-    left: 30%; /* Position the container 45% from the left */
-    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: flex-start; /* Align items to the start of the container */
-    text-align: left; /* Align text to the left */
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .about-me-content {
-    width: 70%; /* Adjust the width of the content */
+    width: 70%;
 }
 
 .about-me-content h1 {
-    font-size: 60px; /* Adjust the font size */
+    font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px; /* Add spacing between elements */
-    color: #ffffff; /* Adjust the font color */
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .about-me-content p {
@@ -35,32 +35,32 @@
     margin-bottom: 10px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative; /* Set position to relative */
+    position: relative;
 }
 
 .flex-about-me-picture {
-    position: absolute; /* Set position to absolute */
-    left: 50%; /* Position the container 65% from the left */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
+    position: absolute;
+    left: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .prog-picture {
-    width: 647; /* Set the width of the image */
-    height: 496; /* Maintain aspect ratio */
-    border-radius: 100px; /* Add border radius for rounded corners */
+    width: 647;
+    height: 496;
+    border-radius: 100px;
 }
 
 
 .flex-aboutme_and_picture{
-	position: absolute; /* Set position to absolute */
-    top: 40%; /* Position the container 50% down from the top */
-    left: 50%; /* Position the container 50% from the left */
-    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space out items horizontally */
-    width: 70%; /* Adjust the width of the container */
+	position: absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 70%; 
 }
 
 
