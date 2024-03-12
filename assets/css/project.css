@@ -6,11 +6,36 @@
 
 }
 
-.project-section h2 {
-    font-size: 45px; /* Adjust the font size */
-	color: #ffffff; /* Adjust the font color */
-
+.project-section h1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+    
 }
+
+.project-section p {
+    font-size: 25px;
+    font-family: Garamond, serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 40rem;
+    display: flex;
+    align-content: flex-start;
+    position: absolute;
+    left: 45rem;
+    top: 10rem;
+    line-height: 2rem;
+
+    
+}
+
 
 .project-section p {
     font-size: 25px; /* Adjust the font size */
@@ -23,21 +48,33 @@
     height: auto; /* Maintain aspect ratio */
 }
 
+
+.proj img {
+    width: 150px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.proj.zoomed img {
+    width: 300px; /* Adjust the width of the images when zoomed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 .flex-projects-pic {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 12%;
+    width: 12rem;
     position: absolute;
-    left: 15%;
+    left: 16em;
 }
 
 .top-images,
 .bottom-images {
     display: flex; /* Use flexbox for positioning */
     justify-content: center; /* Center the images horizontally */
-    gap: 10px; /* Adjust spacing between images */
+    gap: 2rem; /* Adjust spacing between images */
     width: 100%; /* Ensure full width */
     margin: 15px;
 }

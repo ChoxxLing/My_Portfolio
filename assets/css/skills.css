@@ -1,8 +1,8 @@
 .flex-skill-container{
     position: absolute;
-    top: 65%;
+    top: 63%;
     left: 12%;
-
+    z-index: 1;
 }
 
 

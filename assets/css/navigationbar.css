@@ -40,12 +40,42 @@ nav li {
 
 nav a:hover {
     text-decoration: none;
+    padding-bottom: 8px;
+    transform: translateY(-3px);
+    color: rgb(255, 0, 170);
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(236, 19, 73);
+    animation: loading 1s forwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+nav a.active {
     border-bottom: 2px solid rgb(236, 19, 73);
     padding-bottom: 8px;
     transform: translateY(-3px);
 }
 
-nav a.active,
+
 nav a.active:hover {
     border-bottom: 2px solid rgb(236, 19, 73);
     padding-bottom: 8px;
