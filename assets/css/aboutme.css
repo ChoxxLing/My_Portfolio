@@ -74,17 +74,17 @@
 /* Arrow */
 .flex-container {
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top: -80px; /* Adjust this value as needed */
+    left: 30%; /* Adjust this value as needed */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15px;
-  }
-  
+    height: 20px;
+}
+
   .arrow-with-tail {
     position: absolute;
-    top: -80%;
+    top: 80%;
     display: flex;
     width: 100px;
     height: 30px;
@@ -102,6 +102,7 @@
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
     border-left: 30px solid var(--arrow-color, #C516AE);
+
   }
   
 

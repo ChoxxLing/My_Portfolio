@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     min-width: 100vw;
     min-height: 100vh;
-    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -42,8 +41,6 @@ body {
     font-size: 25px;
 	color: #ffffff;
 }
-
-
 
 
 .contact-section {
