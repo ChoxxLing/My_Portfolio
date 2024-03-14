@@ -18,8 +18,6 @@
 }
 
 .project-section p {
-    font-size: 25px;
-    font-family: Garamond, serif;
     margin-top: 0;
     margin-bottom: 10px;
     color: #ffffff;
@@ -28,19 +26,52 @@
     width: 40rem;
     display: flex;
     align-content: flex-start;
-    position: absolute;
-    left: 45rem;
-    top: 10rem;
     line-height: 2rem;
-
-    
+    position: absolute;
+    left: 50%;
 }
 
 
-.project-section p {
-    font-size: 25px; /* Adjust the font size */
-	color: #ffffff; /* Adjust the font color */
+.project-paragraph{
+    font-size: 25px;
+    font-family: Garamond, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.proj-1st-para{
+    display: flex;
+    position: absolute;
+    top: 15%;
+}
+
+
+.proj-2nd-para{
+    display: flex;
+    position: absolute;
+    top: 45%;
+}
+
+
+
+.proj-sentence{
+    display: flex;
+    color: #ffffff;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+}
+
+.proj-here {
+    color: rgb(209, 115, 206); /* default color */
+    cursor: pointer; /* to show it's clickable */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+  }
 
 
 .proj {
@@ -60,6 +91,7 @@
 }
 
 
+
 .flex-projects-pic {
     display: flex;
     flex-direction: column;
@@ -67,7 +99,8 @@
     align-items: center;
     width: 12rem;
     position: absolute;
-    left: 16em;
+    left: 15%;
+    top: 20%;
 }
 
 .top-images,

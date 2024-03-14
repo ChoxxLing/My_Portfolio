@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="assets/css/aboutme.css">
 		<link rel="stylesheet" href="assets/css/skills.css">
 		<link rel="stylesheet" href="assets/css/project.css">
+		<link rel="stylesheet" href="assets/css/contacts.css">
 
 
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
@@ -20,7 +21,7 @@
 	</head>
 
 	
-	<body style="display: flex;">
+	<body>
 		
 		<nav>
 			
@@ -196,15 +197,32 @@
 			<!-- Project content goes here -->
 			<br>
 			<h1>My Project</h1>
+			<div class="project-paragraph">
+				<p class="proj-1st-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
+					pellentesque tincidunt malesuada. Nam sem orci, pellentesque at 
+					sollicitudin vel, dapibus ut felis. Donec at eros volutpat, 
+					tincidunt velit vitae, accumsan sem. Nullam non felis eros. 
+					Donec rhoncus porttitor justo, ac mollis nisl dignissim ac. 
+					Phasellus sit amet arcu vel orci ullamcorper sodales a non mi. 
+					Donec quam ipsum, maximus a diam id, molestie semper tortor. 
+				</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
-				pellentesque tincidunt malesuada. Nam sem orci, pellentesque at 
-				sollicitudin vel, dapibus ut felis. Donec at eros volutpat, 
-				tincidunt velit vitae, accumsan sem. Nullam non felis eros. 
-				Donec rhoncus porttitor justo, ac mollis nisl dignissim ac. 
-				Phasellus sit amet arcu vel orci ullamcorper sodales a non mi. 
-				Donec quam ipsum, maximus a diam id, molestie semper tortor. 
-			</p>
+				<p class="proj-2nd-para">Sed vel dapibus velit, ut sollicitudin turpis. Fusce ac turpis felis. 
+					Proin facilisis, erat non luctus blandit, justo dui commodo dolor, 
+					vel pellentesque velit nunc id dolor. Donec nec sodales enim, eget 
+					eleifend dolor. Nunc placerat sollicitudin lacus, non scelerisque lectus 
+					pellentesque a. Etiam vel imperdiet arcu, aliquam euismod erat. Sed dolor 
+					tellus, aliquet ut blandit eu, rutrum a mauris. Nulla nec lobortis augue, 
+					eget porta arcu.
+				</p>
+
+				<div class="proj-sentence">Click <span class="proj-here" onclick="openLink()">here</span> to view the project.</div>
+					<script>
+					function openLink() {
+						window.open('https://github.com/ChoxxLing/Student-Recording-System', '_blank');
+					}
+					</script>
+			</div>
 
 			<div class="flex-projects-pic">
 				<div class="top-images">
@@ -232,13 +250,26 @@
 			<h2>Work</h2>
 			<p>Explore my works</p>
 		</section>
+
+
+
 	
 		<section class="contact-section" id="contact">
 			<!-- Contact content goes here -->
-			<br>
-			<br>
-			<h2>Contact</h2>
-			<p>Get in touch with us.</p>
+
+			<h1>Contact Me</h1>
+
+				<div class="formwrap">
+					<form>
+						<input type="text" name="Name" placeholder="Name">
+						<input type="email" name="Email" placeholder="Email">
+						<textarea name="Message" placeholder="Message"></textarea>
+						<input type="submit" value="Send" class="btn">
+					</form>
+
+
+					<span>dasdasd</span>
+				</div>
 		</section>
 	
 	</main>
@@ -247,5 +278,7 @@
 
 	<script src="assets/js/navigation.js" defer></script>
 	<script src="assets/js/image_viewer.js" defer></script>
+	<script src="assets/js/contact.js" defer></script>
 
 </html>
+

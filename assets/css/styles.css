@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     min-width: 100vw;
     min-height: 100vh;
+    background-color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -50,13 +50,3 @@ body {
 }
 
 
-.contact-section h2 {
-    font-size: 45px;
-	color: #ffffff;
-
-}
-
-.contact-section p {
-    font-size: 25px;
-	color: #ffffff;
-}
