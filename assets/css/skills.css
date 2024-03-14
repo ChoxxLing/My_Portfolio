@@ -1,7 +1,7 @@
 .flex-skill-container{
     position: absolute;
-    top: 63%;
-    left: 12%;
+    top: 34rem;
+    left: 5%;
     z-index: 1;
 }
 
@@ -11,16 +11,14 @@
     color: #ffffff;
     font-size: 45px;
     font-family: Georgia, serif;
-
-
-
+    padding-left: 4rem;
 }
 
 
 .flex-skill-list-container{
     position: absolute;
     top: 80%;
-    left: -20%;
+    left: 5%;
     display: flex;
     font-size: 25px;
 
@@ -31,19 +29,23 @@
 .skill-list2 {
     position: relative;
     color: #ffffff;
-    flex: 1; /* Each list takes up equal space */
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-
+    flex: 1; 
+    list-style: none; 
+    padding: 0; 
 }
 
 .skill-list{
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
-    margin-right: 25%;
+    margin-right: 10%;
 
 }
 
 .skill-list2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-right: 0%;
     margin-left: 10%;
 

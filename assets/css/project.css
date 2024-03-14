@@ -9,13 +9,27 @@
 .project-section h1 {
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 0px;
     color: #ffffff;
-    display: flex;
-    justify-content: flex-start;
     padding-left: 10%;
-    
 }
+
+.arrow-right {
+    font-size: 10rem;
+    color: #C516AE;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    position: absolute;
+    left: 30rem;
+    top: 1px;
+}
+
+.proj_and_arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .project-section p {
     margin-top: 0;
@@ -56,11 +70,11 @@
 }
 
 
-
 .proj-sentence{
     display: flex;
     color: #ffffff;
     position: absolute;
+    padding-top: 2% ;
     top: 72%;
     left: 50%;
 }

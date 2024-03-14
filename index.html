@@ -13,9 +13,9 @@
 
 
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+		<!--For fancybox-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
 
 		<title>Portfolio Daven Jude Rosales</title>
 	</head>
@@ -32,7 +32,6 @@
 				<li><a href="#home" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">Home</a></li>
 				<li><a href="#about" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">About me</a></li>
 				<li><a href="#project" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">Project</a></li>
-				<li><a href="#work" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">Work</a></li>
 				<li><a href="#contact" onmouseover="changeHoveredLink(this)" onclick="changeActiveLink(this)">Contact</a></li>
 				
 			</ul>
@@ -54,7 +53,7 @@
 					<div class="content">
 						<h2>Hi, I am</h2>
 						<h1>Daven Jude S. Rosales</h1>
-						<p>I am an aspiring engineer studying the Computer Engineering Technology  Course at CITE Technical Institute.</p>
+						<p>I am an aspiring developer studying the Computer Engineering Technology  Course at CITE Technical Institute.</p>
 					</div>
 				</div>
 				
@@ -78,15 +77,17 @@
 			<div class="flex-aboutme_and_picture">
 				<div class="flex-about-me">
 					<div class="about-me-content">
-						<h1>About me</h1>
-						
-							<div class="flex-container">
-								<div class="arrow-with-tail" style="--arrow-color: #C516AE; --arrow-rotation: 180deg;"></div>
-							</div>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut varius dui. Nulla facilisi. Praesent porta semper diam sed lacinia. Proin lacus mi, auctor id massa nec, aliquam mollis tellus. Nulla pharetra et eros at bibendum. 
+						<div class="about_and_arrow">
+							<h1>About me</h1>
+								<span class="arrow-left">&#x2190;</span>
+						</div>	
+						<p>Hey there! I am a passionate computer engineering student with a love for programming and web development. 
+							From tinkering with code to crafting user-friendly interfaces, I thrive on bringing ideas to life in the digital realm.
+							 My journey into the world of technology began with a curiosity-driven exploration of programming languages and design 
+							 principles. Now, armed with a solid foundation in both front-end and back-end development,
 							</p>
-						<p>Fusce mollis lorem vitae tellus sollicitudin, lacinia faucibus enim commodo. Curabitur congue sem nec ligula auctor, et convallis purus sagittis.
+						<p>When I'm not coding, you can find me diving into the latest tech trends, experimenting with new frameworks, or simply enjoying 
+							a good cup of coffee. Let's connect and build something incredible together!
 							</p>
 					</div>
 				</div>
@@ -196,7 +197,10 @@
 		<section class="project-section" id="project">
 			<!-- Project content goes here -->
 			<br>
-			<h1>My Project</h1>
+			<div class="proj_and_arrow">
+				<h1>My Project</h1>
+					<span class="arrow-right">&#8594;</span>
+			</div>
 			<div class="project-paragraph">
 				<p class="proj-1st-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
 					pellentesque tincidunt malesuada. Nam sem orci, pellentesque at 
@@ -241,35 +245,27 @@
 		</section>
 
 
-
-
-		<section class="work-section" id="work">
-			<!-- Skills content goes here -->
-			<br>
-			<br>
-			<h2>Work</h2>
-			<p>Explore my works</p>
-		</section>
-
-
-
 	
 		<section class="contact-section" id="contact">
 			<!-- Contact content goes here -->
 
 			<h1>Contact Me</h1>
+				<div class="form_and_follow">
+					<div class="formwrap">
+						<form>
+							<input type="text" name="Name" placeholder="Name">
+							<input type="email" name="Email" placeholder="Email">
+							<textarea name="Message" placeholder="Message"></textarea>
+							<input type="submit" value="Send" class="btn">
+						</form>
 
-				<div class="formwrap">
-					<form>
-						<input type="text" name="Name" placeholder="Name">
-						<input type="email" name="Email" placeholder="Email">
-						<textarea name="Message" placeholder="Message"></textarea>
-						<input type="submit" value="Send" class="btn">
-					</form>
-
-
-					<span>dasdasd</span>
+					</div>
+					<div class="follow_and_arrow">
+						<span class="followme">Follow Me:</span>
+						<span class="follow-arrow-right">&#8594;</span>
+					</div>
 				</div>
+
 		</section>
 	
 	</main>
@@ -278,7 +274,6 @@
 
 	<script src="assets/js/navigation.js" defer></script>
 	<script src="assets/js/image_viewer.js" defer></script>
-	<script src="assets/js/contact.js" defer></script>
 
 </html>
 
