@@ -1,0 +1,14 @@
+.footer {
+    background-color: #3A0C3C;; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center-align text */
+    height: 5px;
+    margin: 0;
+
+}
+
+.footer-container {
+    max-width: 500px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+}

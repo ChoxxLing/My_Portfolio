@@ -10,8 +10,9 @@
 		<link rel="stylesheet" href="assets/css/skills.css">
 		<link rel="stylesheet" href="assets/css/project.css">
 		<link rel="stylesheet" href="assets/css/contacts.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
 
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 		<!--For fancybox-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -202,25 +203,19 @@
 					<span class="arrow-right">&#8594;</span>
 			</div>
 			<div class="project-paragraph">
-				<p class="proj-1st-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
-					pellentesque tincidunt malesuada. Nam sem orci, pellentesque at 
-					sollicitudin vel, dapibus ut felis. Donec at eros volutpat, 
-					tincidunt velit vitae, accumsan sem. Nullam non felis eros. 
-					Donec rhoncus porttitor justo, ac mollis nisl dignissim ac. 
-					Phasellus sit amet arcu vel orci ullamcorper sodales a non mi. 
-					Donec quam ipsum, maximus a diam id, molestie semper tortor. 
+				<p class="proj-1st-para">The Student Recording System is a Java-based project developed for school management purposes. 
+					Its primary objective is to streamline the monitoring process of students within educational institutions. 
+					The system offers a user-friendly interface and supports three distinct roles: Admin, Teacher, and Student. 
+					The Admin role holds overarching control, managing user accounts and system security.
 				</p>
 
-				<p class="proj-2nd-para">Sed vel dapibus velit, ut sollicitudin turpis. Fusce ac turpis felis. 
-					Proin facilisis, erat non luctus blandit, justo dui commodo dolor, 
-					vel pellentesque velit nunc id dolor. Donec nec sodales enim, eget 
-					eleifend dolor. Nunc placerat sollicitudin lacus, non scelerisque lectus 
-					pellentesque a. Etiam vel imperdiet arcu, aliquam euismod erat. Sed dolor 
-					tellus, aliquet ut blandit eu, rutrum a mauris. Nulla nec lobortis augue, 
-					eget porta arcu.
+				<p class="proj-2nd-para"> Additionally, Admins facilitate account creation, providing initial login credentials while
+					 users complete their account details. This ensures a secure and efficient user management process. Within the system, 
+					 teachers can input students' overall averages, enabling easy access to grades for students. The system also 
+					 incorporates birthday notifications and etc.
 				</p>
 
-				<div class="proj-sentence">Click <span class="proj-here" onclick="openLink()">here</span> to view the project.</div>
+				<div class="proj-sentence">Click <span class="proj-here" onclick="openLink()">here</span> to view the project. <span class="hover-text">Opens in a new tab</span></div>
 					<script>
 					function openLink() {
 						window.open('https://github.com/ChoxxLing/Student-Recording-System', '_blank');
@@ -244,36 +239,63 @@
 			
 		</section>
 
-
-	
 		<section class="contact-section" id="contact">
 			<!-- Contact content goes here -->
-
 			<h1>Contact Me</h1>
 				<div class="form_and_follow">
 					<div class="formwrap">
-						<form>
-							<input type="text" name="Name" placeholder="Name">
-							<input type="email" name="Email" placeholder="Email">
-							<textarea name="Message" placeholder="Message"></textarea>
+						<form id="contactForm" onsubmit="return confirmSubmission()">
+							<input type="text" id="name" name="Name" placeholder="Name" required>
+							<input type="email" id="email" name="Email" placeholder="Email" required>
+							<textarea id="message" name="Message" placeholder="Message" required></textarea>
 							<input type="submit" value="Send" class="btn">
 						</form>
+						
+						<script>
+						function confirmSubmission() {
+							var confirmed = confirm("Sorry, back-end development is currently being learned.");
+							return confirmed;
+						}
+						</script>
+						
 
 					</div>
-					<div class="follow_and_arrow">
-						<span class="followme">Follow Me:</span>
-						<span class="follow-arrow-right">&#8594;</span>
+
+					<div class="followme-contents">
+						<div class="follow_and_arrow">
+							<span class="followme">Follow Me:</span>
+							<span class="follow-arrow-right">&#8594;</span>
+						</div>
+
+						<div class="follow-icons">
+							<a href="https://github.com/ChoxxLing" target="_blank" class="github-icon">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="mailto:davenrosales@gmail.com" class="gmail-icon">
+								<i class="fas fa-envelope"></i>
+							</a>
+							<a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
 					</div>
 				</div>
-
 		</section>
 	
 	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<p>&copy; 2024 Daven Jude Rosales</p>
+		</div>
+	</footer>
+	
 
 	</body>
 
 	<script src="assets/js/navigation.js" defer></script>
 	<script src="assets/js/image_viewer.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
 </html>
 

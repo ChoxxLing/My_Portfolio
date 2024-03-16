@@ -12,12 +12,13 @@
     font-size: 45px;
     font-family: Georgia, serif;
     padding-left: 4rem;
+    padding-top: 20%;
 }
 
 
 .flex-skill-list-container{
     position: absolute;
-    top: 80%;
+    top: 8rem;
     left: 5%;
     display: flex;
     font-size: 25px;

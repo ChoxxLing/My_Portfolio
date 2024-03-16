@@ -5,7 +5,7 @@ $(document).ready(function() {
             "zoom",
             "close"
         ],
-        loop: true // Enable loop for continuous navigation
+        loop: true
     });
 
 });

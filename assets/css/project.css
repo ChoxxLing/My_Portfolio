@@ -11,6 +11,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
     padding-left: 10%;
+    padding-top: 3.5%;
 }
 
 .arrow-right {
@@ -80,28 +81,45 @@
 }
 
 .proj-here {
-    color: rgb(209, 115, 206); /* default color */
-    cursor: pointer; /* to show it's clickable */
+    color: rgb(230, 113, 226);
+    cursor: pointer;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
+    text-decoration: underline ;
   }
 
+.hover-text {
+    display: none;
+    color: white;
+    background-color: rgba(9, 165, 255, 0.8);
+    padding: 4px 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 10rem;
+}
+
+.proj-here:hover + .hover-text {
+    display: inline-block;
+}
 
 .proj {
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 
 .proj img {
-    width: 150px; /* Adjust the width of the images */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 .proj.zoomed img {
-    width: 300px; /* Adjust the width of the images when zoomed */
-    height: auto; /* Maintain aspect ratio */
+    width: 600px;
+    height: auto;
 }
 
 

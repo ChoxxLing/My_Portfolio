@@ -42,7 +42,7 @@ form {
     top: 20%;
     left: 0;
     min-width: 100%;
-    
+    margin-bottom: 20px; /* Add some space between form and followme-content */
 }
 
 
@@ -62,7 +62,9 @@ textarea, input {
 
 textarea{
     min-height: 3rem;
-    max-height: 25rem;
+    max-height: 7rem;
+    resize: vertical; /* Allow vertical resizing */
+
 }
 
 select {
@@ -90,11 +92,17 @@ input[type="submit"] {
 }
 
 .btn:hover {
-    background: #7bbddb;
+    transform: scale(1.05); /* Increase size on hover */
+    background-color: #7a318d; /* Change background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transition: ease 0.5s;
 }
 
 .btn:active {
-    background: #c09d9d;
+    transform: scale(0.9); /* Decrease size when clicked */
+    background-color: #3f0e4d; /* Change background color */
+    box-shadow: none; /* Remove shadow */
+    transition: ease 0.5s;
 }
 
 
@@ -135,4 +143,61 @@ input[type="submit"] {
 
 .form_and_follow{
     display: flex;
+    flex-direction: column; /* Stack form and followme-content vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.github-icon{
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: #551A8B;
+}
+
+.gmail-icon{
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    color: #551A8B;
+}
+
+.linkedin-icon{
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    color: #551A8B;
+}
+
+.followme-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px; /* Adjust distance from formwrap */
+
+}
+
+/* Add these styles for the icon animation */
+.follow-icons a {
+    transition: all 0.3s ease;
+}
+
+.follow-icons a:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    filter: drop-shadow(0 0 3px #fc5252); /* Red color glow */
+    transition: ease 0.9s;
 }
