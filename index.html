@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/home.css">	
 		<link rel="stylesheet" href="assets/css/navigationbar.css">
@@ -51,6 +51,7 @@
 
 			<div class="flex-details_and_picture">
 				<div class="flex-container-details">
+
 					<div class="content">
 						<h2>Hi, I am</h2>
 						<h1>Daven Jude S. Rosales</h1>
@@ -73,8 +74,6 @@
 
 		<section class="about-section" id="about">
 			<!-- About content goes here -->
-			<br>
-			<br>
 			<div class="flex-aboutme_and_picture">
 				<div class="flex-about-me">
 					<div class="about-me-content">
@@ -85,9 +84,8 @@
 						<p>Hey there! I am a passionate computer engineering student with a love for programming and web development. 
 							From tinkering with code to crafting user-friendly interfaces, I thrive on bringing ideas to life in the digital realm.
 							 My journey into the world of technology began with a curiosity-driven exploration of programming languages and design 
-							 principles. Now, armed with a solid foundation in both front-end and back-end development,
-							</p>
-						<p>When I'm not coding, you can find me diving into the latest tech trends, experimenting with new frameworks, or simply enjoying 
+							 principles. Now, armed with a solid foundation in both front-end and back-end development.
+							<br><br>When I'm not coding, you can find me diving into the latest tech trends, experimenting with new frameworks, or simply enjoying 
 							a good cup of coffee. Let's connect and build something incredible together!
 							</p>
 					</div>
@@ -198,44 +196,50 @@
 		<section class="project-section" id="project">
 			<!-- Project content goes here -->
 			<br>
-			<div class="proj_and_arrow">
-				<h1>My Project</h1>
-					<span class="arrow-right">&#8594;</span>
-			</div>
-			<div class="project-paragraph">
-				<p class="proj-1st-para">The Student Recording System is a Java-based project developed for school management purposes. 
-					Its primary objective is to streamline the monitoring process of students within educational institutions. 
-					The system offers a user-friendly interface and supports three distinct roles: Admin, Teacher, and Student. 
-					The Admin role holds overarching control, managing user accounts and system security.
-				</p>
+			<div class="proj-contents_pics">
+				<div class="title_proj-pic">
+					<div class="proj_and_arrow">
+						<h1>My Project</h1>
+							<span class="arrow-right">&#8594;</span>
+					</div>
 
-				<p class="proj-2nd-para"> Additionally, Admins facilitate account creation, providing initial login credentials while
-					 users complete their account details. This ensures a secure and efficient user management process. Within the system, 
-					 teachers can input students' overall averages, enabling easy access to grades for students. The system also 
-					 incorporates birthday notifications and etc.
-				</p>
+					<div class="flex-projects-pic">
+						<div class="top-images">
+							<a href="assets/pictures/proj-1.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-1.png" alt="prog-picture"></a>
+							<a href="assets/pictures/proj-2.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-2.png" alt="prog-picture"></a>
+							<a href="assets/pictures/proj-3.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-3.png" alt="prog-picture"></a>
+						</div>
+						<div class="bottom-images">
+							<a href="assets/pictures/proj-4.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-4.png" alt="prog-picture"></a>
+							<a href="assets/pictures/proj-5.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-5.png" alt="prog-picture"></a>
 
-				<div class="proj-sentence">Click <span class="proj-here" onclick="openLink()">here</span> to view the project. <span class="hover-text">Opens in a new tab</span></div>
-					<script>
-					function openLink() {
-						window.open('https://github.com/ChoxxLing/Student-Recording-System', '_blank');
-					}
-					</script>
-			</div>
-
-			<div class="flex-projects-pic">
-				<div class="top-images">
-					<a href="assets/pictures/proj-1.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-1.png" alt="prog-picture"></a>
-					<a href="assets/pictures/proj-2.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-2.png" alt="prog-picture"></a>
-					<a href="assets/pictures/proj-3.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-3.png" alt="prog-picture"></a>
-				</div>
-				<div class="bottom-images">
-					<a href="assets/pictures/proj-4.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-4.png" alt="prog-picture"></a>
-					<a href="assets/pictures/proj-5.png" data-fancybox="gallery" class="proj"><img src="assets/pictures/proj-5.png" alt="prog-picture"></a>
-
+						</div>
+						
+					</div>
 				</div>
 				
+				<div class="project-paragraph">
+					<p class="proj-1st-para">The Student Recording System is a Java-based project developed for school management purposes. 
+						Its primary objective is to streamline the monitoring process of students within educational institutions. 
+						The system offers a user-friendly interface and supports three distinct roles: Admin, Teacher, and Student. 
+						The Admin role holds overarching control, managing user accounts and system security.
+					</p>
+
+					<p class="proj-2nd-para"> Additionally, Admins facilitate account creation, providing initial login credentials while
+						users complete their account details. This ensures a secure and efficient user management process. Within the system, 
+						teachers can input students' overall averages, enabling easy access to grades for students. The system also 
+						incorporates birthday notifications and etc.
+					</p>
+
+					<div class="proj-sentence">Click <span class="proj-here" onclick="openLink()">here</span> to view the project.</div>
+						<script>
+						function openLink() {
+							window.open('https://github.com/ChoxxLing/Student-Recording-System', '_blank');
+						}
+						</script>
+				</div>
 			</div>
+
 			
 		</section>
 
@@ -244,21 +248,12 @@
 			<h1>Contact Me</h1>
 				<div class="form_and_follow">
 					<div class="formwrap">
-						<form id="contactForm" onsubmit="return confirmSubmission()">
+						<form id="contactForm"  action="https://formspree.io/f/mgeglbek" method="POST">
 							<input type="text" id="name" name="Name" placeholder="Name" required>
 							<input type="email" id="email" name="Email" placeholder="Email" required>
 							<textarea id="message" name="Message" placeholder="Message" required></textarea>
 							<input type="submit" value="Send" class="btn">
 						</form>
-						
-						<script>
-						function confirmSubmission() {
-							var confirmed = confirm("Sorry, back-end development is currently being learned.");
-							return confirmed;
-						}
-						</script>
-						
-
 					</div>
 
 					<div class="followme-contents">
@@ -278,6 +273,7 @@
 								<i class="fab fa-linkedin"></i>
 							</a>
 						</div>
+						
 					</div>
 				</div>
 		</section>

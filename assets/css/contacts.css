@@ -1,48 +1,40 @@
 .contact-section {
-	position: relative;
 	min-height: 100vh;
 	min-width: 100vw; 
 	background: linear-gradient(90deg, rgba(11,11,11,0.8), rgba(14,11,15,0.6), rgba(31,10,12,0.5));
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 
 .contact-section h1 {
     color: #fff;
     text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
-    padding-top: 30px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    position: absolute;
-    top: 5%;
-    left: 40%;
 }
 
 form {
     margin: 0 auto;
-    width: 90%;
+    width: 90rem;
     max-width: 50%;
     min-height: 30%;
-    padding: 30px;
     border-radius: 10px;
     background: transparent;
-    position: absolute;
-    top: 30%;
 }
 
 .formwrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 0;
     min-width: 100%;
-    margin-bottom: 20px; /* Add some space between form and followme-content */
 }
 
 
@@ -56,14 +48,15 @@ textarea, input {
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    padding: 2px;
-    margin-bottom: 20px;
+    margin: 10px;
+    padding-left: 1rem;
 }
 
 textarea{
     min-height: 3rem;
-    max-height: 7rem;
-    resize: vertical; /* Allow vertical resizing */
+    max-height: 10rem;
+    resize: vertical;
+    padding-top: 1rem;
 
 }
 
@@ -109,36 +102,29 @@ input[type="submit"] {
 .followme{
     color: #fff;
     text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
-    padding-top: 30px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    position: absolute;
-    top: 65%;
-    left: 20%;
 }
 
 
 .follow-arrow-right {
-    font-size: 10rem;
+    font-size: 8rem;
     color: #C516AE;
     display: flex;
-    position: absolute;
-    top: 70%;
-    left: 25%;
     z-index: 1;
-
+    justify-content: center;
+    margin-top: -3rem;
 }
 
 .follow_and_arrow{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     z-index: 1;
-
 }
 
 .form_and_follow{
@@ -153,9 +139,6 @@ input[type="submit"] {
     align-items: center;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 75%;
-    left: 50%;
     color: #551A8B;
 }
 
@@ -165,9 +148,6 @@ input[type="submit"] {
     align-items: center;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 75%;
-    left: 60%;
     color: #551A8B;
 }
 
@@ -177,23 +157,23 @@ input[type="submit"] {
     align-items: center;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 75%;
-    left: 70%;
     color: #551A8B;
 }
 
 .followme-contents{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 20px; /* Adjust distance from formwrap */
-
+    gap: 2px;
 }
 
 /* Add these styles for the icon animation */
 .follow-icons a {
     transition: all 0.3s ease;
+}
+
+.follow-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .follow-icons a:hover {
